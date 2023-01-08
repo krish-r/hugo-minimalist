@@ -1,0 +1,16 @@
+{
+    "goTemplateBracketSpacing": true,
+    "jsxSingleQuote": false,
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "parser": "go-template"
+            }
+        }
+    ],
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 4,
+    "trailingComma": "all"
+}

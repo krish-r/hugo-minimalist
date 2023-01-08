@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    {{- partial "head.html" . -}}
+    <body
+        class="container mx-auto min-h-screen scroll-smooth bg-gray-200 dark:bg-gray-800"
+    >
+        {{- partial "header.html" . -}}
+        <div id="content">
+            {{- block "main" . }}{{- end }}
+        </div>
+        {{- partial "footer.html" . -}}
+
+        {{ $scripts := resources.Get "js/script.js" }}
+        <script src="{{ $scripts.Permalink }}" type="text/javascript"></script>
+    </body>
+</html>
