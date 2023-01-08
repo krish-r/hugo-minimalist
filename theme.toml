@@ -3,7 +3,7 @@
 
 name = "Hugo Minimalist"
 license = "MIT"
-licenselink = "https://github.com/krish-r/hugo-minimalist/blob/master/LICENSE"
+licenselink = "https://github.com/krish-r/hugo-minimalist/blob/main/LICENSE"
 description = "A minimalist theme for Hugo. Inspired by PaperMod"
 homepage = "https://github.com/krish-r/hugo-minimalist/"
 tags = ["light mode", "dark mode", "minimal", "responsive", "portfolio"]

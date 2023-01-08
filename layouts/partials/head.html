@@ -6,7 +6,14 @@
     <meta name="robots" content="noindex, nofollow" />
     <title>{{ printf "%s - %s" .Site.Title .Title }}</title>
 
-    {{ $fav := resources.Get "favicon.ico" }}
+    {{ $fav := resources.Get .Site.Params.image.favicon }}
+    {{ with $fav }}
+        <link
+            rel="shortcut icon"
+            href="{{ $fav.RelPermalink }}"
+            type="image/x-icon"
+        />
+    {{ end }}
     <link
         rel="shortcut icon"
         href="{{ $fav.RelPermalink }}"
