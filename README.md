@@ -10,7 +10,7 @@ A minimalist theme for [Hugo][hugo] built with [Tailwind CSS][tailwind_css], ins
 
 ## Installation
 
--   Add the theme as a git submodule for your hugo site
+-   Add the theme as a git submodule to the hugo site
 
     ```sh
     git submodule add --depth=1 https://github.com/krish-r/hugo-minimalist.git themes/hugo-minimalist
@@ -23,7 +23,7 @@ A minimalist theme for [Hugo][hugo] built with [Tailwind CSS][tailwind_css], ins
         git submodule update --remote --merge
         ```
 
--   Clone/Download the theme inside your hugo site
+-   Clone/Download the theme inside the hugo site
 
     ```sh
     git clone --depth=1 https://github.com/krish-r/hugo-minimalist.git themes/hugo-minimalist
@@ -69,17 +69,21 @@ A minimalist theme for [Hugo][hugo] built with [Tailwind CSS][tailwind_css], ins
             logo: /images/logo.png
             profile: /images/profile.png
             favicon: favicon.ico
+
+    enableRobotsTXT: true
     ```
 
 -   `robots` (optional):
 
-    -   Remove the following tag from you `hugo-minimalist/layouts/partials/head.html`
+    -   Remove the following tag from `hugo-minimalist/layouts/partials/head.html`
 
         ```html
         <meta name="robots" content="noindex, nofollow" />
         ```
 
     -   Remove the robots.txt file from `hugo-minimalist/layouts/robots.txt`
+
+    -   set `enableRobotsTXT` to `false` in config file
 
 ### Modifying the theme
 

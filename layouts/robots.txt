@@ -1,4 +1,4 @@
 User-agent: *
-{{ range .Pages }}
+{{ range .Pages }} {{ if not .IsHome }}
 Disallow: {{ .RelPermalink }}
-{{ end }}
+{{ end }} {{ end }}
