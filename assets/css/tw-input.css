@@ -31,4 +31,7 @@
         @apply text-sm;
         @apply md:text-base;
     }
+    li {
+        @apply my-1;
+    }
 }

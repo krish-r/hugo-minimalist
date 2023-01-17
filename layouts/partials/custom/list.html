@@ -1,0 +1,19 @@
+<h4 class="font-bold">{{ .mainDesc }}</h4>
+<ul>
+    {{ range $_, $entries := .mainEntries }}
+        {{ if reflect.IsMap $entries }}
+            {{ range $desc, $entries := $entries }}
+                <li class="pb-2 md:pb-4">
+                    {{ $desc }}
+                    <ul>
+                        {{ range $_, $entry := $entries }}
+                            <li>{{ $entry }}</li>
+                        {{ end }}
+                    </ul>
+                </li>
+            {{ end }}
+        {{ else }}
+            <li>{{ $entries }}</li>
+        {{ end }}
+    {{ end }}
+</ul>
