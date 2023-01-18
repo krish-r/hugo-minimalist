@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
     {{- partial "head.html" . -}}
-    <body class="scroll-smooth bg-gray-200 dark:bg-gray-800">
+    <body
+        class="w-screen overflow-y-auto overflow-x-hidden scroll-smooth bg-slate-200 dark:bg-slate-900"
+    >
         <div class="container mx-auto min-h-screen">
             {{- partial "header.html" . -}}
             <div id="content">

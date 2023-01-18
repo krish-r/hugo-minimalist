@@ -4,9 +4,21 @@ A minimalist theme for [Hugo][hugo] built with [Tailwind CSS][tailwind_css], ins
 
 ## Screenshots
 
+### Dark Mode
+
 ![hugo-minimalist-dark][theme_dark_mode]
 
+![hugo-minimalist-dark-single][hugominimalist_dark_single]
+
+![hugo-minimalist-dark-grid][hugominimalist_dark_grid]
+
+### Light Mode
+
 ![hugo-minimalist-light][theme_light_mode]
+
+![hugo-minimalist-light-single][hugominimalist_light_single]
+
+![hugo-minimalist-light-grid][hugominimalist_light_grid]
 
 ## Installation
 
@@ -106,6 +118,10 @@ npm run tw-build-minify
 
 [hugo]: https://gohugo.io/
 [tailwind_css]: https://tailwindcss.com/
-[theme_light_mode]: https://user-images.githubusercontent.com/54745129/211208294-76b66279-d5f9-4eb6-8c1c-d60064be03c9.png
-[theme_dark_mode]: https://user-images.githubusercontent.com/54745129/211208296-865ee594-8645-4967-8d46-ed487666212e.png
+[theme_light_mode]: https://user-images.githubusercontent.com/54745129/213254674-9831fce2-b92d-47fc-af1b-0bd28762631a.png
+[theme_dark_mode]: https://user-images.githubusercontent.com/54745129/213254752-ba81d522-d5c7-46ff-a58d-c88647af90bf.png
+[hugominimalist_light_single]: https://user-images.githubusercontent.com/54745129/213254703-c3def5bc-580d-4962-9704-b1c055543c99.png
+[hugominimalist_light_grid]: https://user-images.githubusercontent.com/54745129/213254717-fab9cf5a-3a5f-46e6-b278-ee96007d1850.png
+[hugominimalist_dark_single]: https://user-images.githubusercontent.com/54745129/213254928-13d023e7-0089-4d85-b500-58e34c627c84.png
+[hugominimalist_dark_grid]: https://user-images.githubusercontent.com/54745129/213254969-fd86e3a6-f2ae-4fa8-b13d-de6af8c1eea4.png
 [hugo_papermod]: https://github.com/adityatelange/hugo-PaperMod/

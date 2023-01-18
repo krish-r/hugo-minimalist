@@ -1,7 +1,7 @@
 {{ define "main" }}
     <div class="h-[80vh]">
         <div
-            class="flex h-4/5 flex-col items-center justify-center space-y-4 px-5 text-4xl text-gray-800 dark:text-gray-400"
+            class="flex h-4/5 flex-col items-center justify-center space-y-4 px-5 text-4xl text-slate-800 dark:text-slate-400"
         >
             {{ $image := resources.Get .Site.Params.image.profile }}
             {{ with $image }}
@@ -15,7 +15,8 @@
                 class="items-center justify-center pb-3 text-2xl font-bold md:text-3xl"
             >
                 <span>{{ .Site.Params.home.greeting }}, I'm</span>
-                <span class="p animate-fade-3 text-gray-900  dark:text-gray-500"
+                <span
+                    class="p animate-fade-3 text-slate-900  dark:text-slate-500"
                     >{{ .Site.Params.home.name }}
                 </span>
             </p>

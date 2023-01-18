@@ -15,6 +15,7 @@
         @apply text-base;
         @apply md:text-lg;
     }
+
     ul {
         @apply list-inside;
         @apply list-disc;
@@ -33,5 +34,21 @@
     }
     li {
         @apply my-1;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-2;
+    }
+    ::-webkit-scrollbar-track {
+        @apply dark:bg-slate-900;
+        @apply bg-slate-200;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply dark:bg-slate-700/75;
+        @apply bg-slate-400/75;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-slate-400;
+        @apply dark:bg-slate-700;
     }
 }

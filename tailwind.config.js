@@ -24,6 +24,7 @@ module.exports = {
         extend: {
             colors: {},
             animation: {
+                "fade-1": "fadeIn 1s",
                 "fade-3": "fadeIn 3s",
                 "fade-5": "fadeIn 5s",
                 wiggle: "wiggle 1s ease-in-out infinite",

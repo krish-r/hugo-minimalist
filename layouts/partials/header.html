@@ -14,7 +14,7 @@
                 <div>
                     <a
                         href="/"
-                        class="font-mono font-bold text-gray-800 hover:text-gray-900 hover:no-underline dark:text-gray-400 dark:hover:text-gray-500 md:text-xl"
+                        class="font-mono font-bold text-slate-800 hover:text-slate-900 hover:no-underline dark:text-slate-400 dark:hover:text-slate-500 md:text-xl"
                     >
                         {{ .Site.Title }}
                     </a>
@@ -25,13 +25,13 @@
                 {{ range .Site.Menus.main }}
                     <div class="group m-1">
                         <a
-                            class="p-1 text-sm text-gray-800 hover:text-gray-900 hover:no-underline dark:text-gray-400 dark:hover:text-gray-500 md:text-base"
+                            class="p-1 text-sm text-slate-800 hover:text-slate-900 hover:no-underline dark:text-slate-400 dark:hover:text-slate-500 md:text-base"
                             href="{{ .URL }}"
                             title="{{ .Title }}"
                             >{{ .Name }}</a
                         >
                         <div
-                            class="mt-1 rounded border-t-2 border-gray-500 opacity-0 duration-200 group-hover:opacity-100"
+                            class="mt-1 rounded border-t-2 border-slate-500 opacity-0 duration-200 group-hover:opacity-100"
                         ></div>
                     </div>
                 {{ end }}
@@ -41,7 +41,7 @@
             <button
                 id="theme-toggle"
                 title="Toggle"
-                class="p-1 text-gray-800 hover:animate-wiggle dark:text-gray-400"
+                class="p-1 text-slate-800 hover:animate-wiggle hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-500"
             >
                 <svg
                     class=""

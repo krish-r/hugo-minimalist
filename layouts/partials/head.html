@@ -20,11 +20,6 @@
             type="image/x-icon"
         />
     {{ end }}
-    <link
-        rel="shortcut icon"
-        href="{{ $fav.RelPermalink }}"
-        type="image/x-icon"
-    />
     {{ $styles := resources.Get "css/style.css" }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

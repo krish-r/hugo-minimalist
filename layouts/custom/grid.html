@@ -1,12 +1,12 @@
 {{ define "main" }}
     <div class="overflow-y-auto">
         <h1
-            class="mt-6 w-1/5 p-6 text-2xl font-bold text-gray-800 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-500 md:text-4xl"
+            class="mt-6 w-1/5 p-6 text-2xl font-bold text-slate-800 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-500 md:text-4xl"
         >
             {{ .Title }}
         </h1>
         <div
-            class="m-4 flex flex-col space-y-4 p-3 text-sm text-gray-800 dark:text-gray-400 md:text-base"
+            class="m-4 flex flex-col space-y-4 p-3 text-sm text-slate-800 dark:text-slate-400 md:text-base"
         >
             {{ .Content }}
 
@@ -15,7 +15,7 @@
             {{ $mainContents := index .Site.Data .Params.dataFile }}
             {{ range $_, $stacks := $mainContents }}
                 <div
-                    class="grid animate-fade-3 grid-flow-row grid-cols-1 overflow-y-auto md:grid-cols-2 lg:grid-cols-3"
+                    class="grid animate-fade-1 grid-flow-row grid-cols-1 overflow-y-auto md:grid-cols-2 lg:grid-cols-3"
                 >
                     <!-- Stack Lists -->
                     {{ range $_, $stack := $stacks }}
@@ -25,32 +25,32 @@
                                 {{ $entryCount := (len $mainEntries) }}
                                 {{ if gt $entryCount "3" }}
                                     <div
-                                        class="row-span-4 m-2 h-auto w-auto rounded-lg bg-gray-300 p-5 shadow-md dark:bg-gray-900"
+                                        class="row-span-4 m-2 h-auto w-auto rounded-lg bg-slate-300/25 p-5 shadow-md hover:bg-slate-300 dark:bg-slate-800/25 hover:dark:bg-slate-800"
                                     >
                                         {{ partial "custom/list" (dict "context" . "mainDesc" $mainDesc "mainEntries" $mainEntries) }}
                                     </div>
                                 {{ else if ge $entryCount "3" }}
                                     <div
-                                        class="row-span-3 m-2 h-auto w-auto rounded-lg bg-gray-300 p-5 shadow-md dark:bg-gray-900"
+                                        class="row-span-3 m-2 h-auto w-auto rounded-lg bg-slate-300/25 p-5 shadow-md hover:bg-slate-300 dark:bg-slate-800/25 hover:dark:bg-slate-800"
                                     >
                                         {{ partial "custom/list" (dict "context" . "mainDesc" $mainDesc "mainEntries" $mainEntries) }}
                                     </div>
                                 {{ else if ge $entryCount "2" }}
                                     <div
-                                        class="row-span-2 m-2 h-auto w-auto rounded-lg bg-gray-300 p-5 shadow-md dark:bg-gray-900"
+                                        class="row-span-2 m-2 h-auto w-auto rounded-lg bg-slate-300/25 p-5 shadow-md hover:bg-slate-300 dark:bg-slate-800/25 hover:dark:bg-slate-800"
                                     >
                                         {{ partial "custom/list" (dict "context" . "mainDesc" $mainDesc "mainEntries" $mainEntries) }}
                                     </div>
                                 {{ else }}
                                     <div
-                                        class="m-2 h-auto w-auto rounded-lg bg-gray-300 p-5 shadow-md dark:bg-gray-900"
+                                        class="m-2 h-auto w-auto rounded-lg bg-slate-300/25 p-5 shadow-md hover:bg-slate-300 dark:bg-slate-800/25 hover:dark:bg-slate-800"
                                     >
                                         {{ partial "custom/list" (dict "context" . "mainDesc" $mainDesc "mainEntries" $mainEntries) }}
                                     </div>
                                 {{ end }}
                             {{ else }}
                                 <div
-                                    class="m-2 h-auto w-auto rounded-lg bg-gray-300 p-5 shadow-md dark:bg-gray-900"
+                                    class="m-2 h-auto w-auto rounded-lg bg-slate-300/25 p-5 shadow-md hover:bg-slate-300 dark:bg-slate-800/25 hover:dark:bg-slate-800"
                                 >
                                     {{ partial "custom/list" (dict "context" . "mainDesc" $mainDesc "mainEntries" $mainEntries) }}
                                 </div>
