@@ -2,6 +2,7 @@ const themeToggleBtn = document.querySelector("#theme-toggle");
 const themeToggleDarkIcon = themeToggleBtn.querySelector("#theme-toggle #moon");
 const themeToggleLightIcon = document.querySelector("#theme-toggle #sun");
 const themeIdentifier = "preferred-theme";
+const yearPlaceholder = document.querySelector("#year-placeholder");
 
 // Add Event Listener for Toggle button
 function toggleTheme() {
@@ -34,3 +35,9 @@ function setTheme() {
     }
 }
 window.addEventListener("load", setTheme);
+
+function setYear() {
+    const year = new Date().getFullYear();
+    yearPlaceholder.textContent = year.toString();
+}
+window.addEventListener("load", setYear);
